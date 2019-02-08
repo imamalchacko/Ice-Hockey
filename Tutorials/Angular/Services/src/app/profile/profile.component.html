@@ -1,0 +1,14 @@
+<div>
+  Name: {{user.name}} <p>
+  Job: {{user.job}}<p>
+  
+  <button (click)="toggle()">Toggle</button>
+    <span *ngIf="!check">
+      Email: {{user.email}}
+    </span>
+  <p>
+  Phone:
+  <div *ngIf="user.phone.length>0">
+    <p *ngFor="let phone of user.phone">{{phone}}</p>
+  </div>
+</div> 

@@ -1,0 +1,6 @@
+<form #f="ngForm" (ngSubmit)="apply(f)">
+    Name: <input type="text" name="name" id="name" [{ngModel}]="student.name"><p><p>
+    Email: <input type="text" name="email" [{ngModel}]="student.email"><p><p>
+    password: <input type="password" name="password" [{ngModel}]="student.password"><p><p>
+    <input type="submit"> <input type="reset">
+</form>
