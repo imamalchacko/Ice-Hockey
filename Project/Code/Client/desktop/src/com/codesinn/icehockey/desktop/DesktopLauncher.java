@@ -2,20 +2,15 @@ package com.codesinn.icehockey.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.codesinn.icehockey.MainClass;
-import com.codesinn.icehockey.helpers.GameInfo;
+import com.codesinn.icehockey.MainActivity;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		config.width= 369;
-		config.height= 704;
-		config.title="Ice Hockey";
-		//config.resizable=false;
-		config.backgroundFPS=60;
+		config.width=1280;
+		config.height=720;
 		config.foregroundFPS=60;
-		config.x=250;
-		config.y=0;
-		new LwjglApplication(new MainClass(), config);
+		config.backgroundFPS=60;
+		new LwjglApplication(new MainActivity(), config);
 	}
 }
